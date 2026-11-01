@@ -1,0 +1,12 @@
+{
+  "name": "simon-xia-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Simon Xia \u2014 Design Engineering portfolio",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "check:book": "node scripts/check-book-motion.mjs"
+  }
+}

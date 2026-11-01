@@ -1,0 +1,77 @@
+/* A hand-turned software dial; app faces remain upright around the orbit. */
+@layer components {
+  .capabilities .section-heading { margin-bottom: 44px; }
+  .wheel-layout { display: grid; grid-template-columns: minmax(270px, .7fr) minmax(0, 1.3fr); align-items: center; gap: clamp(40px, 6vw, 110px); }
+  .wheel-statement { max-width: 15ch; font-size: clamp(30px, 3vw, 46px); line-height: 1.15; letter-spacing: -.045em; }
+  .wheel-summary { max-width: 33ch; margin-top: 26px; font-size: 16px; line-height: 1.7; color: var(--muted); }
+  .wheel-controls { display: flex; align-items: center; gap: 22px; margin-top: 48px; }
+  .wheel-controls[hidden] { display: none; }
+  .wheel-arrows { display: flex; gap: 8px; }
+  .wheel-step { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #193b3a35; border-radius: 50%; background: transparent; cursor: pointer; font-size: 22px; transition: background .2s, color .2s; }
+  .wheel-step:hover { background: var(--ink); color: var(--paper); }
+  .wheel-controls p { font-size: 12px; line-height: 1.6; color: var(--muted); }
+  .wheel-stage-wrap { width: 100%; max-width: 740px; justify-self: center; }
+  .capability-wheel { --app-size: clamp(50px, 12cqw, 90px); position: relative; width: 100%; aspect-ratio: 1; container-type: inline-size; isolation: isolate; user-select: none; touch-action: pan-y; cursor: grab; }
+  .capability-wheel.is-dragging, .capability-wheel.is-dragging .tool-item { cursor: grabbing; }
+  .wheel-disc { position: absolute; inset: 5%; border: 1px solid #193b3a1a; border-radius: 50%; background: #f8f6ef66; box-shadow: 0 20px 55px -38px #193b3a35, inset 0 1px 1px #ffffffbf; pointer-events: none; }
+  .wheel-disc::before { content: ''; position: absolute; inset: 7.7%; border: 1px solid #193b3a25; border-radius: 50%; }
+  .wheel-disc::after { content: ''; position: absolute; inset: 23%; border: 1px dashed #193b3a20; border-radius: 50%; }
+  .wheel-marker { position: absolute; top: .5%; left: calc(50% - 2px); width: 4px; height: 12px; border-radius: 3px; background: var(--ink); }
+  .wheel-tools { list-style: none; margin: 0; padding: 0; }
+  .wheel-slot { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); z-index: 2; }
+  .tool-item { width: max(76px, calc(var(--app-size) + 16px)); padding: 0; border: 0; background: transparent; display: flex; align-items: center; flex-direction: column; gap: clamp(7px, 1.5cqw, 12px); cursor: grab; border-radius: 20%; color: var(--ink); }
+  .tool-icon-stage { display: grid; place-items: center; width: var(--app-size); height: var(--app-size); border-radius: 24%; background: var(--app-surface, #f8f9f5); border: 1px solid #ffffffb8; box-shadow: 0 2px 3px #193b3a0a, 0 8px 16px -6px #193b3a26, inset 0 1px 1px #ffffffcf; transition: transform .28s cubic-bezier(.22,.8,.25,1), box-shadow .28s; }
+  .tool-icon-stage img { width: 58%; height: 58%; object-fit: contain; pointer-events: none; -webkit-user-drag: none; }
+  .tool-name { font-size: clamp(10px, 1.9cqw, 13px); line-height: 1.35; text-align: center; white-space: nowrap; }
+  .tool-item[aria-pressed="true"] .tool-icon-stage { box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px #193b3a70, 0 9px 20px -8px #193b3a30; }
+  .tool-item[aria-pressed="true"] .tool-name { font-weight: 650; }
+  .tool-item:focus-visible { outline-offset: 8px; }
+  .tool-item[data-tool="python"] { --app-surface: #f0f6fa; }
+  .tool-item[data-tool="cplusplus"] { --app-surface: #edf3fc; }
+  .tool-item[data-tool="javascript"] { --app-surface: #f0db4f; }
+  .tool-item[data-tool="javascript"] .tool-icon-stage img { width: 73%; height: 73%; }
+  .tool-item[data-tool="blender"], .tool-item[data-tool="fusion"] { --app-surface: #fff2e5; }
+  .tool-item[data-tool="ansys"] { --app-surface: #fff8e6; }
+  .tool-item[data-tool="matlab"] { --app-surface: #edf3f7; }
+  .tool-item[data-tool="kicad"] { --app-surface: #e1ede2; }
+  .tool-item[data-tool="kicad"] .tool-icon-stage img { width: 76%; height: 76%; }
+  .tool-item[data-tool="figma"] { --app-surface: #f9f8f4; }
+  .wheel-hub { position: absolute; inset: 29%; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; pointer-events: none; }
+  .wheel-category { font-size: clamp(10px, 1.7cqw, 12px); line-height: 1.45; color: var(--muted); max-width: 23ch; }
+  .wheel-tool-title { font-size: clamp(23px, 5.6cqw, 42px); font-weight: 500; letter-spacing: -.045em; line-height: 1.12; margin: 12px 0 17px; }
+  .wheel-description { font-size: clamp(12px, 1.9cqw, 14px); line-height: 1.6; color: var(--muted); max-width: 27ch; }
+  .wheel-mobile-description { display: none; }
+  @media (hover: hover) and (pointer: fine) {
+    .tool-item:hover .tool-icon-stage { transform: translateY(-4px) scale(1.1); }
+    .capability-wheel.is-dragging .tool-icon-stage { transform: none; }
+  }
+}
+@layer responsive {
+  @media (max-width: 1050px) {
+    .wheel-layout { grid-template-columns: 1fr; gap: 32px; }
+    .wheel-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 40px; align-items: start; }
+    .wheel-statement { max-width: 24ch; grid-row: span 2; font-size: 32px; }
+    .wheel-summary { margin-top: 0; font-size: 15px; }
+    .wheel-controls { margin-top: 0; }
+    .wheel-stage-wrap { max-width: 650px; }
+  }
+  @media (max-width: 700px) {
+    .capabilities .section-heading { margin-bottom: 30px; gap: 12px; }
+    .wheel-intro { display: block; }
+    .wheel-statement { font-size: 29px; max-width: 24ch; }
+    .wheel-summary { font-size: 14px; margin-top: 16px; max-width: 40ch; }
+    .wheel-controls { margin-top: 24px; }
+    .wheel-layout { gap: 32px; }
+    .wheel-stage-wrap { max-width: 460px; }
+    .wheel-hub { inset: 29%; }
+    .wheel-tool-title { font-size: clamp(22px, 5.6cqw, 28px); margin-block: 9px 0; }
+    .wheel-category { font-size: 11px; }
+    .wheel-description { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    .wheel-mobile-description { display: block; text-align: center; max-width: 33ch; margin: 24px auto 0; font-size: 14px; line-height: 1.6; color: var(--muted); min-height: 4.8em; }
+    .wheel-marker { top: -1%; height: 9px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tool-icon-stage, .wheel-step { transition: none; }
+    .tool-item:hover .tool-icon-stage { transform: none; }
+  }
+}

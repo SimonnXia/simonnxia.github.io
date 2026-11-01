@@ -1,0 +1,101 @@
+// Profile and case studies curated from Simon’s supplied portfolios.
+export const profile = { name: 'Simon Xia', email: 'sx1224@ic.ac.uk', emailPlaceholder: 'yourname@example.com' };
+export const projects = {
+  moduframe: {
+    title: 'MODUFRAME', category: 'Sustainable design engineering / Aircraft seating',
+    image: '/assets/moduframe-renders/moduframe-front-render.webp', imageStyle: 'case-studio', imageWidth: 1086, imageHeight: 1448,
+    alt: 'Complete MODUFRAME aircraft-seat concept with X-shaped aluminium legs, grey comfort panels and navy arm caps',
+    imageCaption: 'Front and rear views of the proposed seating system. AI-assisted concept visualisations derived from the original SDE drawings.',
+    companionImage: { src: '/assets/moduframe-renders/moduframe-rear-render.webp', alt: 'Rear view of MODUFRAME with independent tray, power and storage accessories', label: 'Rear / service modules' },
+    description: 'Aircraft seats combine materials with very different service lives, making repair and end-of-life separation difficult. MODUFRAME proposes an economy-class seat built around a durable aluminium frame, detachable comfort layers and independent service accessories. The individual design develops group research through requirements, lifecycle mapping, modular CAD and material assessment.',
+    focusLabel: 'Simon’s contribution', focus: 'Individual concept development, modular CAD, material selection & circularity assessment',
+    contextLabel: 'Context', context: 'DE2 Sustainable Design Engineering · Individual submission informed by group research',
+    highlights: [
+      { title: 'Separate service lives', text: 'A proposed aluminium 6061 frame supports replaceable seat-pan, backrest, cushion and arm-cap modules.' },
+      { title: 'Design for maintenance', text: 'Mechanical connections and independent accessories support component-level repair, cleaning and upgrades.' },
+      { title: 'Assess materials and circularity', text: 'A mass-weighted circularity study and an indicative Ansys Granta EduPack Eco Audit identify material and recovery priorities.' },
+    ],
+    gallery: [
+      { src: '/assets/moduframe-renders/moduframe-rear-render.webp', alt: 'Rear MODUFRAME concept visualisation with tray, power and storage modules', caption: 'The rear assembly groups service accessories into independently replaceable modules.', style: 'product-cutout' },
+      { src: '/assets/moduframe-renders/primary-frame-front-render.webp', alt: 'Concept visualisation of the three-seat primary frame with perforated seat pans', caption: 'The long-life primary frame, visualised from the original CAD study.', style: 'technical-detail' },
+    ],
+    credit: 'Individual design by Simon Xia, informed by group research. Photoreal images are AI-assisted concept visualisations derived from the SDE drawings, not photographs of manufactured or tested parts. The system map, connector detail and assessment figures are original submission material. The interactive chair is a visual reconstruction based on the concept renders; it is not source CAD. Mass and circularity figures are concept estimates. Safety certification and physical validation are not established by this study.',
+  },
+  axispro: {
+    title: 'AxisPro', category: 'Product engineering / June 2026',
+    image: '/assets/projects/axispro-studio.webp', imageStyle: 'case-studio',
+    alt: 'AxisPro studio render with its tower, model holder and physical controls',
+    imageCaption: 'AxisPro: the final product form, visualised in a studio setting.',
+    description: 'Miniature painting involves long sessions, repeated hand repositioning and limited desk space. Developed over four months, AxisPro brings height adjustment, tilt, controlled rotation and a secure model clamp into one motorised workstation. User research, physical prototypes and ergonomic testing shaped the layout and its direct physical controls.',
+    focusLabel: 'Simon’s contribution', focus: 'Business model, labelling & user guide, rendering',
+    contextLabel: 'Context', context: 'Team project · Product Design Engineering, Imperial College London',
+    highlights: [
+      { title: 'Fit around the painter', text: 'Anthropometric testing informed the tower height, while user feedback led to a shallower form that takes up less desk depth.' },
+      { title: 'Make control intuitive', text: 'A central joystick handles height and rotation; a rotary encoder controls tilt. The layout accommodates both left- and right-handed painters.' },
+      { title: 'Refine through making', text: 'A lead-screw mechanism provides self-locking positioning. Driver changes addressed noise and visible stepping during prototype development.' },
+    ],
+    gallery: [
+      { src: '/assets/projects/axispro-in-use.jpg', alt: 'A painter using the working AxisPro prototype', caption: 'The working prototype in use: bringing the miniature to the painter.', style: 'case-photo' },
+      { src: '/assets/projects/axispro-exploded.webp', alt: 'AxisPro exploded assembly showing the holder, lead screw, tower and control panel', caption: 'Exploded assembly: connecting the mechanism, enclosure and controls.', style: 'product-cutout' },
+    ],
+    credit: 'Team: Aaron Xu, Aidan Ryder, Lucian Brand and Simon Xia.',
+  },
+  'stream-x': {
+    title: 'STREAM X', category: 'Automotive design / Thermofluids',
+    image: '/assets/projects/stream-x-studio.webp', imageStyle: 'case-studio',
+    alt: 'Original grey STREAM X body model with open wheel arches and an integrated rear channel',
+    imageCaption: 'Original STREAM X form study: a continuous body shell with open wheel arches and an integrated rear channel.',
+    description: 'STREAM X explores how a smooth body and an integrated roof channel can guide airflow. A low nose, continuous cabin surface and rear taper connect aerodynamic intent with the vehicle’s identity. A simplified model was analysed in ANSYS Fluent to study pressure distribution, velocity, drag and rear-wake behaviour.',
+    focusLabel: 'Focus', focus: 'Form development, CAD modelling & CFD analysis',
+    contextLabel: 'Context', context: 'DE 2 Thermofluids: Energy and Design',
+    highlights: [
+      { title: 'Integrate the airflow', text: 'The concept moves from an added rear wing to a C-shaped channel embedded within the body, connecting aerodynamic intent with the overall form.' },
+      { title: 'Translate form into geometry', text: 'A rounded leading edge, integrated channel and smooth longitudinal curvature carry the sketch into a simplified model for simulation.' },
+      { title: 'Learn from the simulation', text: 'CFD reported a drag coefficient of 0.345. Rear pressure recovery and lower-edge separation remain priorities for the next design iteration.' },
+    ],
+    gallery: [
+      { src: '/assets/projects/stream-x-road-rear.jpg', alt: 'AI-assisted visualisation of the silver STREAM X coupe on a coastal road', caption: 'AI-assisted concept visualisation: the swept roof, rear channel and continuous light signature.', style: 'case-photo' },
+      { src: '/assets/projects/stream-x-cfd.png', alt: 'CFD flow trajectories around the simplified STREAM X model, coloured by pressure', caption: 'CFD flow trajectories, coloured by pressure.', style: 'technical-detail' },
+    ],
+    credit: 'Design study by Simon Xia. The interactive scene is a simplified form study; the original CAD render is shown above. Simulation results relate to the simplified CFD model.',
+  },
+  'the-path': {
+    title: 'Jìng — The Path', category: 'Spatial design / Co-design',
+    image: '/assets/projects/path-social-space.jpg', imageStyle: 'case-spatial',
+    alt: 'The Path proposal on Queen’s Lawn, showing the shelter, shared seating and people using the space',
+    imageCaption: 'The proposed social space in context: shelter, seating and places to pause on Queen’s Lawn.',
+    description: 'How could Queen’s Lawn support campus life beyond sunny days? Jìng combines curved shelter, adaptable seating and shared spaces for study, rest and conversation. Observation, interviews and physical prototypes led to a lower path layout that balances social connection with quieter places to pause.',
+    focusLabel: 'Methods', focus: 'User research, co-design, CAD, 3D printing & full-scale cardboard prototyping',
+    contextLabel: 'Context', context: 'Team project · Queen’s Lawn, Imperial College London',
+    highlights: [
+      { title: 'Start with campus life', text: 'Observations and interviews revealed a shortage of seating, wet ground and seasonal differences in use. These findings shaped a brief around shelter, comfort and flexible social space.' },
+      { title: 'Prototype at two scales', text: '3D-printed seating and a full-scale cardboard chair explored comfort and flexibility. Foam and cardboard site models helped participants compare the raised loop and lower path layouts.' },
+      { title: 'Design with the users', text: 'A co-design session involved 11 students and one professor. Eight of the 12 preferred the path layout; feedback guided detachable seating, flooring and drainage in the final CAD proposal.' },
+    ],
+    gallery: [
+      { src: '/assets/projects/path-social-space.jpg', alt: 'Ground-level CAD view of Jìng’s curved shelter and shared seating', caption: 'Sheltered social space, shown as a CAD visualisation.', style: 'spatial-detail' },
+      { src: '/assets/projects/path-structure.jpg', alt: 'CAD study of the curved path structure with a slide and drainage', caption: 'Developing the shelter, drainage and playful elements together.', style: 'spatial-detail' },
+      { src: '/assets/projects/path-concept-sketch.jpg', alt: 'Wide presentation sketch of the Jìng concept', caption: 'The early concept: a continuous path through a shared landscape.', style: 'wide-detail' },
+      { src: '/assets/projects/path-seating-prototype.jpg', alt: 'A participant handles the 3D-printed modular seating during co-design', caption: 'Testing how modular seating could be arranged.', style: 'small-detail' },
+    ],
+    credit: 'Team: Simon Xia, Yuxuan Zhou, Cici Song, Ziqi Zhou and Simon Wang. Seating and spatial prototypes were built; the full site structure remains a CAD proposal.',
+  },
+  simrest: {
+    title: 'SIMREST Q2', category: 'Industrial design / Product concept',
+    image: '/assets/process/simrest-raised-top.webp', imageStyle: 'case-bedside',
+    alt: 'The complete SIMREST Q2 concept with its raised charging surface and illuminated ring', imageCaption: 'The raised-interface concept, shown in its intended bedside setting.',
+    description: 'A bedside device concept combining wireless charging, light feedback and physical controls. A soft fabric top and circular enclosure sit quietly within the bedroom, while detailed settings move to the underside. Rendered alternatives explore the relationship between a calm exterior, tactile interaction and internal construction.',
+    focusLabel: 'Focus', focus: 'Product form, physical controls & assembly',
+    contextLabel: 'Context', context: 'Simmons-inspired product concept',
+    highlights: [
+      { title: 'Bring functions together', text: 'The enclosure integrates a charging surface, LED ring, USB-C connection, microphone, speaker and ventilation into one compact object.' },
+      { title: 'Keep the surface calm', text: 'Detailed settings sit underneath the device. Slider and button alternatives explore different ways to make adjustments without crowding the visible surface.' },
+      { title: 'Resolve the physical form', text: 'Flush and raised charging-surface variants, an exploded assembly and dimensioned views develop the relationship between the exterior and its components.' },
+    ],
+    gallery: [
+      { src: '/assets/projects/simrest-underside.jpg', alt: 'SIMREST Q2 underside with speaker, ventilation and four groups of physical controls', caption: 'Underside controls keep the main surface uncluttered.', style: 'warm-detail' },
+      { src: '/assets/projects/simrest-exploded.jpg', alt: 'Exploded view of the SIMREST Q2 charging surface, enclosure and internal components', caption: 'Exploring how the enclosure and components fit together.', style: 'dark-detail' },
+    ],
+    credit: 'Concept design by Simon Xia.',
+  },
+};
