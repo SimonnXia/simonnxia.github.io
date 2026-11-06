@@ -1,0 +1,143 @@
+/* Chinese edition: the same paper, sage palette and interactions, with a
+   consistent reading rhythm and spacing suited to Chinese text. */
+@font-face { font-family:"Noto Sans SC"; src:url('/assets/fonts/NotoSansSC-Portfolio-Regular.woff2') format('woff2'); font-style:normal; font-weight:100 500; font-display:swap; }
+@font-face { font-family:"Noto Sans SC"; src:url('/assets/fonts/NotoSansSC-Portfolio-Bold.woff2') format('woff2'); font-style:normal; font-weight:550 900; font-display:swap; }
+:root {
+  --font-zh: "Noto Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+html[lang="zh-CN"] body {
+  font-family: var(--font-zh);
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+button, input, textarea, select { font-family: inherit; }
+.zh-header-actions { display: flex; align-items: center; gap: 22px; flex-shrink: 0; }
+.desktop-nav { gap: clamp(19px, 2.4vw, 42px); }
+.desktop-nav a, .header-contact, .language-switch { white-space: nowrap; }
+.wordmark { letter-spacing: .015em; font-weight: 650; }
+.world-kicker { letter-spacing: .065em; }
+.world-title h1 {
+  font-family: var(--font-zh);
+  font-size: clamp(52px, 5.4vw, 92px);
+  line-height: 1.17;
+  letter-spacing: -.025em;
+  font-weight: 550;
+}
+.world-title h1 span { font-family: Arial, sans-serif; font-size: .62em; margin-left: .12em; }
+.world-title p { line-height: 1.85; }
+.world-coordinate { font-family: var(--font-zh); line-height: 1.9; letter-spacing: .06em; }
+.world-enter { font-size: 14px; }
+.world-interlude p { letter-spacing: 0; line-height: 1.5; }
+.world-arrival h2 { font-family: var(--font-zh); letter-spacing: -.02em; line-height: 1.13; }
+.world-arrival-inner > p { letter-spacing: .04em; }
+.world-chapters button { font-family: var(--font-zh); }
+.world-scroll { max-width: 270px; }
+.section-heading h2 {
+  font-family: var(--font-zh);
+  font-size: clamp(42px, 4.5vw, 76px);
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  font-weight: 550;
+}
+.section-heading > span { font-family: var(--font-zh); letter-spacing: .02em; font-size: 13px; line-height: 1.7; }
+.work-heading > p { line-height: 1.8; }
+.book-topline { line-height: 1.6; letter-spacing: 0; }
+.book-summary { line-height: 1.8; }
+.book-detail figcaption, .book-image-caption { line-height: 1.7; }
+.book-navigation > p { line-height: 1.75; }
+.book-explore { letter-spacing: 0; }
+.about-copy h3 { line-height: 1.4; letter-spacing: -.02em; font-weight: 500; }
+.english-statement, .about-description { line-height: 1.85; }
+.about-copy .education { margin-top: 32px; }
+.education h4 { font-size: 15px; font-weight: 600; }
+.education h4 span { font-weight: 400; }
+.education-row + .education-row { margin-top: 25px; padding-top: 23px; border-top: 1px solid var(--line); }
+.education-row h5 { font-size: 18px; line-height: 1.5; letter-spacing: 0; }
+.education-row p { line-height: 1.75; }
+.education-row .content-note { display: block; font-size: 12px; line-height: 1.8; margin-top: 7px; }
+.timeline-label { line-height: 1.8; white-space: nowrap; }
+.zh-company-en { font-size: 13px; font-weight: 400; color: var(--muted); margin-left: 7px; }
+.zh-experience-list { margin: 9px 0 0; padding-left: 1.15em; color: var(--muted); font-size: 13px; line-height: 1.85; }
+.zh-experience-list li + li { margin-top: 5px; }
+.zh-placement { display: grid; grid-template-columns: 90px 1fr; gap: 20px; margin-top: 29px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.zh-placement > span { font-size: 12px; line-height: 1.85; }
+.zh-placement p { color: var(--muted); font-size: 13px; line-height: 1.85; }
+.about-bottom p { line-height: 1.75; }
+.portrait-block figcaption { line-height: 1.7; }
+.portfolio-download strong { letter-spacing: 0; line-height: 1.55; }
+.wheel-statement { max-width: 13em; letter-spacing: -.02em; line-height: 1.45; font-weight: 500; }
+.wheel-summary { line-height: 1.85; max-width: 24em; }
+.wheel-hub .wheel-category { max-width: 14em; line-height: 1.65; }
+.wheel-description { line-height: 1.75; max-width: 13em; }
+.wheel-mobile-description { line-height: 1.85; max-width: 24em; }
+.contact-top p { line-height: 1.85; }
+.contact h2 { font-family: var(--font-zh); font-size: clamp(70px, 9vw, 154px); line-height: 1.18; letter-spacing: -.03em; font-weight: 500; }
+.contact-portfolio-link { font-size: 17px; }
+.footer { line-height: 1.7; }
+.project-story-copy h2 { line-height: 1.1; }
+.project-story-copy h3 { line-height: 1.38; letter-spacing: -.02em; }
+.project-story-copy > p, .project-story-copy #project-story-description { line-height: 1.8; }
+.dialog-content > p, .dialog-facts p { line-height: 1.85; }
+.dialog-content h2 { line-height: 1.1; }
+.process-heading h3, .process-stage h3, .process-stage h4 { letter-spacing: -.015em; line-height: 1.45; }
+.process-heading > p, .stage-summary, .stage-note, .stage-copy, .process-stage p { line-height: 1.85; }
+.process-nav a, .process-nav button { line-height: 1.65; }
+.case-view-label, .case-hero figcaption, .case-gallery figcaption { line-height: 1.75; }
+@media (min-width: 1051px) {
+  .portrait-block { align-self: start; position: sticky; top: 115px; }
+}
+@media (max-width: 1050px) {
+  .header-inner { gap: 18px; }
+  .desktop-nav { gap: 20px; }
+  .desktop-nav a { font-size: 12px; }
+  .zh-header-actions { gap: 15px; }
+  .header-contact { gap: 15px; padding-inline: 18px; }
+  .wordmark { font-size: 23px; }
+  .world-title h1 { font-size: 5.7vw; }
+  .wheel-statement { max-width: 15em; }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .desktop-nav a[href$=".pdf"] { display: none; }
+}
+@media (max-width: 760px) {
+  .world-title h1 { font-size: clamp(40px, 9.4vw, 66px); line-height: 1.22; }
+  .world-title p { font-size: 14px; }
+  .world-title .world-enter { font-size: 13px; }
+  .world-kicker { font-size: 10px; letter-spacing: .025em; }
+  .world-chapters { gap: 22px; }
+  .world-chapters button { font-size: 12px; }
+  .section-heading h2 { font-size: 42px; }
+  .about-copy h3 { font-size: clamp(28px, 5vw, 40px); }
+  .project-topbar { gap: 10px; }
+  .project-topbar button { font-size: 12px; }
+  .project-story-copy h3 { line-height: 1.35; }
+}
+@media (max-width: 700px) {
+  .wordmark { font-size: 21px; }
+  .zh-header-actions { gap: 15px; }
+  .header-contact { padding: 10px 13px; gap: 12px; }
+  .education h4 span { display: block; margin: 8px 0 0; line-height: 1.65; }
+  .education-row, .zh-placement { grid-template-columns: 82px 1fr; gap: 15px; }
+  .education-row h5 { font-size: 17px; }
+  .education-row p, .zh-experience-list { font-size: 14px; }
+  .zh-company-en { display: block; margin-left: 0; }
+  .about-description, .english-statement { font-size: 16px; }
+  .about-copy .education { margin-top: 27px; }
+  .wheel-statement { font-size: 30px; }
+  .wheel-summary { max-width: 28em; }
+  .wheel-mobile-description { min-height: 4em; }
+  .contact h2 { font-size: clamp(52px, 12vw, 84px); line-height: 1.25; }
+  .contact-top > p { font-size: 14px; }
+  .contact-downloads { gap: 12px 30px; }
+  .contact-portfolio-link { font-size: 16px; }
+  .project-story-copy #project-story-description { font-size: 14px; }
+  .book-navigation { gap: 16px; }
+  .book-navigation > p { max-width: 20em; }
+}
+@media (max-width: 380px) {
+  .zh-header-actions { gap: 10px; }
+  .header-contact { padding-inline: 10px; }
+  .header-contact .contact-dot { display: none; }
+  .education-row, .zh-placement { grid-template-columns: 1fr; gap: 7px; }
+}

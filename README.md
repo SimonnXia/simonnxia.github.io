@@ -2,7 +2,13 @@
 
 Personal portfolio of Simon Xia, a Design Engineering undergraduate at Imperial College London.
 
-**Live website:** https://simonnxia.github.io/
+**English website:** https://simonnxia.github.io/
+
+**中文网站:** https://simonnxia.github.io/zh/
+
+The Chinese edition has independent copy and PDF downloads. Shared animations, project images and software controls remain the same. English files are retained.
+
+Chinese copy lives in `zh/index.html`, `zh/content.js`, `zh/project-process.js`, and `zh/project-stories.js`. `zh/zh.css` adjusts Chinese typography. The Chinese web fonts are bundled locally with their OFL notice.
 
 ## Selected work
 
@@ -23,6 +29,7 @@ npm start
 # Open http://127.0.0.1:4173
 npm run check
 npm run check:book
+npm run check:zh
 ```
 
 ## Publish updates

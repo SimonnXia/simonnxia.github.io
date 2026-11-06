@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "check": "node scripts/check.mjs",
-    "check:book": "node scripts/check-book-motion.mjs"
+    "check:book": "node scripts/check-book-motion.mjs",
+    "check:zh": "node scripts/check-zh.mjs"
   }
 }
