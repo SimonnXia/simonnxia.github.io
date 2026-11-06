@@ -54,7 +54,7 @@ function toast(message) {
 document.querySelector('#copy-email').addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(email);
-    toast(profile.email ? '邮箱已复制，期待与你联系。' : '示例邮箱已复制。');
+    toast(profile.email ? '邮箱地址已复制。' : '示例邮箱已复制。');
   } catch {
     const selection = window.getSelection();
     const range = document.createRange();
@@ -96,7 +96,7 @@ document.querySelectorAll('[data-project]').forEach(button => {
     story.dataset.project = key;
     story.dataset.chapter = '1';
     dialog.dataset.theme = narrative.theme;
-    document.querySelector('.project-model-caption').textContent = key === 'axispro' ? '原始 CAD 装配 · 滚动查看结构' : key === 'stream-x' ? '车身造型研究' : key === 'the-path' ? '空间概念模型' : key === 'moduframe' ? '概念模型 · 滚动环绕查看' : '交互模型展示';
+    document.querySelector('.project-model-caption').textContent = key === 'axispro' ? '原始 CAD 装配 · 滚动查看结构' : key === 'stream-x' ? '车身造型研究' : key === 'the-path' ? '空间概念模型' : key === 'moduframe' ? '概念模型 · 滚动环绕查看' : '交互模型';
     document.querySelector('#project-bar-title').textContent = project.title;
     document.querySelector('#project-story-name').textContent = narrative.title;
     document.querySelector('#project-story-category').textContent = narrative.category;

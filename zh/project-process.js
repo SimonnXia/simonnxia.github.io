@@ -2,18 +2,18 @@
 export const projectProcesses = {
   "moduframe": {
     "title": "MODUFRAME",
-    "intro": "从循环设计需求出发，通过部件研究、材料比较与循环性评估，开发可维护的模块化航空座椅。",
+    "intro": "从座椅维护和材料回收需求出发，完成模块划分、结构建模、材料比较与循环性评估。",
     "stages": [
       {
         "id": "system",
-        "label": "系统",
-        "title": "先理解零件的使用寿命",
-        "body": "项目从航空座椅循环利用的障碍切入：混合材料难以分离，不同部件磨损速度不同。团队前期研究被转化为舒适、可维修、轻量化与材料回收等设计要求。我在此基础上发展个人方案，用系统图梳理各部件从投入使用到离开客舱后的生命周期。",
+        "label": "需求分析",
+        "title": "梳理座椅的全生命周期",
+        "body": "航空座椅由多种材料组成，各部件的磨损速度也不同。团队先期调研重点分析材料分离、维修与回收的困难。我据此整理舒适性、可维修性、轻量化和回收要求，并通过系统图梳理采购、制造、使用、拆解及回收各阶段，作为个人方案的设计基础。",
         "images": [
           {
             "src": "/assets/process/moduframe-circular-system-map.png",
-            "alt": "循环系统图：原始系统研究：采购、制造、安装、维护、拆解与材料回收。",
-            "caption": "原始系统研究：采购、制造、安装、维护、拆解与材料回收。",
+            "alt": "循环系统图：座椅从采购、制造到维护、拆解与材料回收的系统图。",
+            "caption": "座椅从采购、制造到维护、拆解与材料回收的系统图。",
             "title": "循环系统图",
             "group": "",
             "kind": "drawing",
@@ -24,14 +24,14 @@ export const projectProcesses = {
       },
       {
         "id": "structure",
-        "label": "结构",
-        "title": "保留骨架，单独更换零件",
-        "body": "以 6061 铝合金骨架作为长寿命结构基础，将 X 形支架、横向导轨与可拆座盆组织为可维护的单元。效果图用于说明构件关系，原始连接图则保留具体结构细节。以下写实图片为基于原始图纸的 AI 辅助概念效果图，并非已制造的部件。",
+        "label": "骨架结构",
+        "title": "保留主骨架，单独更换部件",
+        "body": "主骨架采用 6061 铝合金，由 X 形支架和横向导轨支撑可拆座盆。各模块通过机械连接装配，便于后续维护。下方效果图基于原始图纸经 AI 辅助生成，用于展示结构关系；连接细节另附原始 CAD 图。",
         "images": [
           {
             "src": "/assets/moduframe-renders/primary-frame-front-render.webp",
-            "alt": "主骨架 · 正面：三个座位共用横向导轨与四组 X 形支架。（AI 辅助概念效果图）",
-            "caption": "三个座位共用横向导轨与四组 X 形支架。",
+            "alt": "主骨架 · 正面：三个座位共用横向导轨和四组 X 形支架。（AI 辅助概念效果图）",
+            "caption": "三个座位共用横向导轨和四组 X 形支架。",
             "title": "主骨架 · 正面",
             "group": "骨架视图",
             "kind": "render",
@@ -40,8 +40,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/primary-frame-rear-render.webp",
-            "alt": "主骨架 · 背面：曲面支架确定靠背轮廓，同时显露各模块的连接界面。（AI 辅助概念效果图）",
-            "caption": "曲面支架确定靠背轮廓，同时显露各模块的连接界面。",
+            "alt": "主骨架 · 背面：靠背支撑轮廓及各模块的连接位置。（AI 辅助概念效果图）",
+            "caption": "靠背支撑轮廓及各模块的连接位置。",
             "title": "主骨架 · 背面",
             "group": "骨架视图",
             "kind": "render",
@@ -50,8 +50,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/primary-frame-side-render.webp",
-            "alt": "主骨架 · 侧面：侧视图展示座盆、靠背支撑与底部骨架之间的关系。（AI 辅助概念效果图）",
-            "caption": "侧视图展示座盆、靠背支撑与底部骨架之间的关系。",
+            "alt": "主骨架 · 侧面：座盆、靠背支撑与底部骨架的侧视关系。（AI 辅助概念效果图）",
+            "caption": "座盆、靠背支撑与底部骨架的侧视关系。",
             "title": "主骨架 · 侧面",
             "group": "骨架视图",
             "kind": "render",
@@ -60,8 +60,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/x-leg-frame-render.webp",
-            "alt": "X 形支架：通过内凹截面与开放区域，探索减少支架材料用量的几何方案。（AI 辅助概念效果图）",
-            "caption": "通过内凹截面与开放区域，探索减少支架材料用量的几何方案。",
+            "alt": "X 形支架：通过内凹截面与开放结构，探索减少支架材料用量。（AI 辅助概念效果图）",
+            "caption": "通过内凹截面与开放结构，探索减少支架材料用量。",
             "title": "X 形支架",
             "group": "部件与连接",
             "kind": "render",
@@ -70,8 +70,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/seat-pan-render.webp",
-            "alt": "可拆座盆：带孔再生聚合物座盆由两根结构导轨支撑。（AI 辅助概念效果图）",
-            "caption": "带孔再生聚合物座盆由两根结构导轨支撑。",
+            "alt": "可拆座盆：带孔的再生聚合物座盆，由两根导轨支撑。（AI 辅助概念效果图）",
+            "caption": "带孔的再生聚合物座盆，由两根导轨支撑。",
             "title": "可拆座盆",
             "group": "部件与连接",
             "kind": "render",
@@ -80,8 +80,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/modular-seat-joint-render.webp",
-            "alt": "模块化导轨连接：分开的配合面说明座盆与共用骨架的连接关系。（AI 辅助概念效果图）",
-            "caption": "分开的配合面说明座盆与共用骨架的连接关系。",
+            "alt": "模块化导轨连接：座盆与共用骨架的配合及连接位置。（AI 辅助概念效果图）",
+            "caption": "座盆与共用骨架的配合及连接位置。",
             "title": "模块化导轨连接",
             "group": "部件与连接",
             "kind": "render",
@@ -90,8 +90,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/process/moduframe-quarter-turn-joint.png",
-            "alt": "四分之一转连接件：原始 CAD 细节图：通过四分之一转紧固件形成可逆的机械连接。",
-            "caption": "原始 CAD 细节图：通过四分之一转紧固件形成可逆的机械连接。",
+            "alt": "四分之一转连接件：原始 CAD 细节：四分之一转紧固件形成可拆连接。",
+            "caption": "原始 CAD 细节：四分之一转紧固件形成可拆连接。",
             "title": "四分之一转连接件",
             "group": "部件与连接",
             "kind": "drawing",
@@ -102,64 +102,64 @@ export const projectProcesses = {
       },
       {
         "id": "comfort",
-        "label": "舒适层",
-        "title": "让直接接触的表面可以更换",
-        "body": "根据不同使用寿命拆分舒适层，提出可分别清洁、更换的 rPET 网布、TPU 与 E-TPU 层。靠背、头枕及扶手各自形成模块，避免因局部磨损而替换整套软包座椅。下列写实图为 AI 辅助概念效果图。",
+        "label": "坐垫与靠背",
+        "title": "将软包拆分为可更换的层",
+        "body": "坐垫与靠背按材料寿命分层，采用可分别清洁、更换的 rPET 网布、TPU 与 E-TPU 部件。头枕和扶手也独立设计，以减少局部磨损时的更换范围。下方为基于原始图纸生成的 AI 辅助概念效果图。",
         "images": [
           {
             "src": "/assets/moduframe-renders/comfort-seat-front-render.webp",
-            "alt": "舒适模块 · 正面：完整舒适模块包含轮廓靠背、坐垫与独立扶手接触面。（AI 辅助概念效果图）",
-            "caption": "完整舒适模块包含轮廓靠背、坐垫与独立扶手接触面。",
-            "title": "舒适模块 · 正面",
-            "group": "舒适模块总成",
+            "alt": "舒适模块 · 正面：靠背、坐垫与扶手接触面分别设置。（AI 辅助概念效果图）",
+            "caption": "靠背、坐垫与扶手接触面分别设置。",
+            "title": "软包模块 · 正面",
+            "group": "软包模块总成",
             "kind": "render",
             "width": 1254,
             "height": 1254
           },
           {
             "src": "/assets/moduframe-renders/comfort-seat-perspective-render.webp",
-            "alt": "舒适模块 · 透视：斜视角呈现各接触表面及其分层构造。（AI 辅助概念效果图）",
-            "caption": "斜视角呈现各接触表面及其分层构造。",
-            "title": "舒适模块 · 透视",
-            "group": "舒适模块总成",
+            "alt": "舒适模块 · 透视：从斜侧面查看软包形态与分层关系。（AI 辅助概念效果图）",
+            "caption": "从斜侧面查看软包形态与分层关系。",
+            "title": "软包模块 · 透视",
+            "group": "软包模块总成",
             "kind": "render",
             "width": 1254,
             "height": 1254
           },
           {
             "src": "/assets/moduframe-renders/cushion-exploded-render.webp",
-            "alt": "三层坐垫：间隔网布罩面、压力分散层与结构底板分离，以支持按层更换。（AI 辅助概念效果图）",
-            "caption": "间隔网布罩面、压力分散层与结构底板分离，以支持按层更换。",
+            "alt": "三层坐垫：网布表层、压力分散层与结构底板可分别更换。（AI 辅助概念效果图）",
+            "caption": "网布表层、压力分散层与结构底板可分别更换。",
             "title": "三层坐垫",
-            "group": "可更换层",
+            "group": "分层构造",
             "kind": "render",
             "width": 1448,
             "height": 1086
           },
           {
             "src": "/assets/moduframe-renders/backrest-exploded-render.webp",
-            "alt": "靠背分层：网状背板与可移除舒适面板采用独立部件设计。（AI 辅助概念效果图）",
-            "caption": "网状背板与可移除舒适面板采用独立部件设计。",
+            "alt": "靠背分层：网状背板与软垫面板分开设计。（AI 辅助概念效果图）",
+            "caption": "网状背板与软垫面板分开设计。",
             "title": "靠背分层",
-            "group": "可更换层",
+            "group": "分层构造",
             "kind": "render",
             "width": 1254,
             "height": 1254
           },
           {
             "src": "/assets/moduframe-renders/headrest-exploded-render.webp",
-            "alt": "头枕分层：成形支撑板承载可拆卸的头部接触软垫。（AI 辅助概念效果图）",
-            "caption": "成形支撑板承载可拆卸的头部接触软垫。",
+            "alt": "头枕分层：成形支撑板与可拆头枕软垫。（AI 辅助概念效果图）",
+            "caption": "成形支撑板与可拆头枕软垫。",
             "title": "头枕分层",
-            "group": "可更换层",
+            "group": "分层构造",
             "kind": "render",
             "width": 1448,
             "height": 1086
           },
           {
             "src": "/assets/moduframe-renders/armrest-support-render.webp",
-            "alt": "扶手支撑：独立支撑位于可更换的接触表层下方。（AI 辅助概念效果图）",
-            "caption": "独立支撑位于可更换的接触表层下方。",
+            "alt": "扶手支撑：扶手支撑与上方可更换表层。（AI 辅助概念效果图）",
+            "caption": "扶手支撑与上方可更换表层。",
             "title": "扶手支撑",
             "group": "扶手模块",
             "kind": "render",
@@ -168,9 +168,9 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/armrest-cap-render.webp",
-            "alt": "扶手表层：将日常磨损最集中的表面做成可拆件。（AI 辅助概念效果图）",
-            "caption": "将日常磨损最集中的表面做成可拆件。",
-            "title": "扶手表层",
+            "alt": "扶手表层：将易磨损的扶手接触面设计为可拆件。（AI 辅助概念效果图）",
+            "caption": "将易磨损的扶手接触面设计为可拆件。",
+            "title": "扶手面板",
             "group": "扶手模块",
             "kind": "render",
             "width": 1448,
@@ -180,14 +180,14 @@ export const projectProcesses = {
       },
       {
         "id": "accessories",
-        "label": "配件",
-        "title": "让配件独立维护",
-        "body": "餐桌板、电源与储物件作为独立服务模块连接到座椅，使局部升级无需替换主骨架。采用胶粘固定的储物袋仍存在拆解难题，是后续迭代需要解决的取舍。下列写实图为 AI 辅助概念效果图。",
+        "label": "功能配件",
+        "title": "让餐桌、电源与储物件独立维护",
+        "body": "餐桌板、电源和储物配件分别安装在座椅上，局部升级无需更换主骨架。其中，储物袋仍采用胶粘固定，拆解较为困难，是后续需要改进的连接方式。下方为 AI 辅助概念效果图。",
         "images": [
           {
             "src": "/assets/moduframe-renders/accessory-backrest-render.webp",
-            "alt": "椅背配件总成：餐桌板、电源与储物部件形成可更换的后部组合。（AI 辅助概念效果图）",
-            "caption": "餐桌板、电源与储物部件形成可更换的后部组合。",
+            "alt": "椅背配件总成：餐桌板、电源与储物件分别安装在椅背。（AI 辅助概念效果图）",
+            "caption": "餐桌板、电源与储物件分别安装在椅背。",
             "title": "椅背配件总成",
             "group": "后部总成",
             "kind": "render",
@@ -196,8 +196,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/storage-bag-render.webp",
-            "alt": "储物袋：软质储物件提供便捷取放空间；胶粘连接仍需进一步改进。（AI 辅助概念效果图）",
-            "caption": "软质储物件提供便捷取放空间；胶粘连接仍需进一步改进。",
+            "alt": "储物袋：储物袋采用胶粘连接，后续需改进拆卸方式。（AI 辅助概念效果图）",
+            "caption": "储物袋采用胶粘连接，后续需改进拆卸方式。",
             "title": "储物袋",
             "group": "后部总成",
             "kind": "render",
@@ -206,30 +206,30 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/moduframe-renders/tray-table-render.webp",
-            "alt": "可延伸餐桌板：方案将滑动延伸结构与卡扣锁定方式结合。（AI 辅助概念效果图）",
-            "caption": "方案将滑动延伸结构与卡扣锁定方式结合。",
+            "alt": "可延伸餐桌板：餐桌板采用滑动延伸结构和卡扣锁定方式。（AI 辅助概念效果图）",
+            "caption": "餐桌板采用滑动延伸结构和卡扣锁定方式。",
             "title": "可延伸餐桌板",
-            "group": "服务模块",
+            "group": "功能配件",
             "kind": "render",
             "width": 1448,
             "height": 1086
           },
           {
             "src": "/assets/moduframe-renders/power-module-render.webp",
-            "alt": "电源模块：独立电源单元与座椅下方供电接口相连。（AI 辅助概念效果图）",
-            "caption": "独立电源单元与座椅下方供电接口相连。",
+            "alt": "电源模块：独立电源模块连接座椅下方的供电接口。（AI 辅助概念效果图）",
+            "caption": "独立电源模块连接座椅下方的供电接口。",
             "title": "电源模块",
-            "group": "服务模块",
+            "group": "功能配件",
             "kind": "render",
             "width": 1448,
             "height": 1086
           },
           {
             "src": "/assets/moduframe-renders/storage-board-render.webp",
-            "alt": "座下储物板：可拆底板与可调绑带用于约束乘客行李。（AI 辅助概念效果图）",
-            "caption": "可拆底板与可调绑带用于约束乘客行李。",
+            "alt": "座下储物板：可拆底板和可调绑带用于固定行李。（AI 辅助概念效果图）",
+            "caption": "可拆底板和可调绑带用于固定行李。",
             "title": "座下储物板",
-            "group": "服务模块",
+            "group": "功能配件",
             "kind": "render",
             "width": 1448,
             "height": 1086
@@ -238,14 +238,14 @@ export const projectProcesses = {
       },
       {
         "id": "assessment",
-        "label": "评估",
-        "title": "检验材料选择带来的影响",
-        "body": "通过质量加权材料循环性指标（MCI）与 Ansys Granta EduPack Eco Audit，评估材料、制造、运输及报废情景。报告中的概念估算质量为 13.1 kg，加权 MCI 为 0.70；铝材是质量与材料隐含环境影响的主要来源。Eco Audit 采用一年分析期，未计入运营使用阶段。这些数值为模型估算，不是实测生命周期表现；实物验证与航空安全认证仍待开展。",
+        "label": "材料评估",
+        "title": "评估材料用量与循环利用潜力",
+        "body": "采用质量加权材料循环性指标（MCI）和 Ansys Granta EduPack Eco Audit，比较材料、制造、运输及报废阶段的环境影响。方案估算质量为 13.1 kg，加权 MCI 为 0.70；铝材占较大质量比例，也是材料阶段环境影响的主要来源。Eco Audit 分析期为一年，未计入运营使用阶段。结果属于概念估算，尚需实物测试和航空安全认证。",
         "images": [
           {
             "src": "/assets/process/moduframe-eco-audit-chart.png",
-            "alt": "Eco Audit 结果：原始评估图：材料、制造、运输及报废阶段的影响贡献。",
-            "caption": "原始评估图：材料、制造、运输及报废阶段的影响贡献。",
+            "alt": "Eco Audit 结果：材料、制造、运输及报废阶段的环境影响。",
+            "caption": "材料、制造、运输及报废阶段的环境影响。",
             "title": "Eco Audit 结果",
             "group": "",
             "kind": "drawing",
@@ -254,8 +254,8 @@ export const projectProcesses = {
           },
           {
             "src": "/assets/process/moduframe-mass-and-mci-analysis.png",
-            "alt": "质量与循环性分析：原始提交材料：估算质量 13.1 kg，加权 MCI 0.70。",
-            "caption": "原始提交材料：估算质量 13.1 kg，加权 MCI 0.70。",
+            "alt": "质量与循环性分析：估算质量 13.1 kg，质量加权 MCI 为 0.70。",
+            "caption": "估算质量 13.1 kg，质量加权 MCI 为 0.70。",
             "title": "质量与循环性分析",
             "group": "",
             "kind": "drawing",
@@ -267,24 +267,24 @@ export const projectProcesses = {
     ]
   },
   "axispro": {
-    "intro": "团队从涂装高度测试出发，逐步完成机构研究、控制布局与可工作的整机原型。我主要负责渲染、标签、五页用户指南及商业模式。",
+    "intro": "四人团队完成了用户调研、机构与控制布局迭代，以及可工作的整机原型。我主要负责渲染、标签、用户指南和商业模式设计。",
     "stages": [
       {
         "id": "research",
-        "label": "调研",
-        "title": "从涂装者的工作方式出发",
-        "body": "团队围绕模型、手部、姿势与周边工作空间四个方面展开研究，将 18 个初始构想收敛为定位工作站。在选择机构之前，先用可调灰纸板模型，与身高 155—203 cm 的参与者共同测试适合涂装的高度。",
+        "label": "用户调研",
+        "title": "确定合适的涂装高度",
+        "body": "团队从模型位置、手部操作、身体姿势和桌面空间四个方面展开调研，从 18 个初始构想中筛选出电动涂装工作台方案。随后使用可调纸板模型，邀请身高 155—203 cm 的参与者测试合适的涂装高度。",
         "images": [
           {
-            "alt": "较矮使用者的高度测试：通过灰纸板原型检查模型位置与工作台之间的关系。",
-            "caption": "通过灰纸板原型检查模型位置与工作台之间的关系。",
+            "alt": "较矮使用者的高度测试：用可调纸板原型测试不同模型高度。",
+            "caption": "用可调纸板原型测试不同模型高度。",
             "width": 1800,
             "height": 1350,
             "src": "/assets/process/axis-height-short.webp"
           },
           {
-            "alt": "较高使用者的高度测试：使用同一可调模型，比较不同身高所需的位置调整。",
-            "caption": "使用同一可调模型，比较不同身高所需的位置调整。",
+            "alt": "较高使用者的高度测试：比较较高使用者所需的调节范围。",
+            "caption": "比较较高使用者所需的调节范围。",
             "width": 1800,
             "height": 1350,
             "src": "/assets/process/axis-height-tall.webp"
@@ -293,20 +293,20 @@ export const projectProcesses = {
       },
       {
         "id": "mechanisms",
-        "label": "原型",
-        "title": "从粗略模型到可控运动",
-        "body": "团队先通过早期模型确定桌面占地与手部可达范围，再进入详细 CAD。高度调节比较了伸缩、皮带、滑轮与丝杠方案，最终采用结构更简洁且具有自锁特性的丝杠；随后研究如何在立柱与模型夹具中布置另外两个旋转轴。",
+        "label": "机构原型",
+        "title": "比较升降与旋转方案",
+        "body": "团队先用粗略模型确认桌面占用和手部可达范围，再细化 CAD 结构。升降机构比较了伸缩、皮带、滑轮与丝杠方案，最终选择结构相对简洁、具有自锁特性的丝杠，并进一步研究俯仰和旋转机构在立柱及夹具中的布置。",
         "images": [
           {
-            "alt": "原型与 CAD 的迭代过程：从初始效果图、灰纸板模型，到多轮立柱 CAD 方案。",
-            "caption": "从初始效果图、灰纸板模型，到多轮立柱 CAD 方案。",
+            "alt": "原型与 CAD 的迭代过程：从初始效果图、纸板模型到多轮立柱 CAD 方案。",
+            "caption": "从初始效果图、纸板模型到多轮立柱 CAD 方案。",
             "width": 1733,
             "height": 969,
             "src": "/assets/process/axis-prototype-evolution.webp"
           },
           {
-            "alt": "垂直机构的工坊原型：通过实体机构研究升降方案与部件布置。",
-            "caption": "通过实体机构研究升降方案与部件布置。",
+            "alt": "垂直机构的工坊原型：实体机构原型，用于比较升降方式与部件布置。",
+            "caption": "实体机构原型，用于比较升降方式与部件布置。",
             "width": 1200,
             "height": 1600,
             "src": "/assets/process/axis-mechanism-test.webp",
@@ -317,19 +317,19 @@ export const projectProcesses = {
       {
         "id": "user-testing",
         "label": "用户测试",
-        "title": "让反馈真正改变布局",
-        "body": "测试推动了机构外形与控制面板的调整。使用者偏好更浅的立柱，团队因此加宽螺母支架，将其深度从 108 mm 减至 58 mm。手臂长度测试倾向于 90 mm 的伸出距离；控制测试则促成十字摇杆与旋转编码器布局，使高度及旋转调节更直观。",
+        "title": "根据反馈缩减尺寸、调整控制",
+        "body": "测试中，使用者更倾向于深度较小的立柱。团队调整螺母支架的宽深比例，将深度从 108 mm 减至 58 mm；手臂可达范围测试则支持采用 90 mm 的伸出距离。控制面板经比较后采用十字摇杆与旋转编码器，分别调节高度、旋转和俯仰。",
         "images": [
           {
-            "alt": "螺母支架的三轮 CAD 迭代：根据用户对浅立柱的偏好，逐步调整支架宽度与深度。",
-            "caption": "根据用户对浅立柱的偏好，逐步调整支架宽度与深度。",
+            "alt": "螺母支架的三轮 CAD 迭代：根据测试反馈，调整螺母支架的宽深比例。",
+            "caption": "根据测试反馈，调整螺母支架的宽深比例。",
             "width": 1250,
             "height": 594,
             "src": "/assets/process/axis-mount-iterations.webp"
           },
           {
-            "alt": "控制面板布局与用户测试：比较初始方案与测试后的摇杆、旋转编码器布置。",
-            "caption": "比较初始方案与测试后的摇杆、旋转编码器布置。",
+            "alt": "控制面板布局与用户测试：比较摇杆与旋转编码器的布局。",
+            "caption": "比较摇杆与旋转编码器的布局。",
             "width": 1025,
             "height": 849,
             "src": "/assets/process/axis-control-iterations.webp"
@@ -338,20 +338,20 @@ export const projectProcesses = {
       },
       {
         "id": "working-prototype",
-        "label": "制作与测试",
-        "title": "把运动整合成完整系统",
-        "body": "团队先分别测试各电机，再集成电路与机械结构。面包板测试推进为焊接电路板及整机原型。测试中发现原有电机驱动器存在噪声与明显步进顿挫，随后换用 TMC2209 驱动器，改善运行平顺性。此部分为团队工程开发成果。",
+        "label": "整机测试",
+        "title": "集成电路与机械结构",
+        "body": "团队先分别测试电机，完成面包板电路测试后进行焊接，再将控制电路与机械结构集成到整机。针对原驱动器的噪声和明显步进顿挫，团队换用 TMC2209 驱动器，改善运行平顺性。",
         "images": [
           {
-            "alt": "底座内部的电路集成：工作原型打开后，可见控制板及底座内部走线。",
-            "caption": "工作原型打开后，可见控制板及底座内部走线。",
+            "alt": "底座内部的电路集成：打开底座后可见控制板及内部走线。",
+            "caption": "打开底座后可见控制板及内部走线。",
             "width": 1800,
             "height": 1078,
             "src": "/assets/process/axis-electronics-integration.webp"
           },
           {
-            "alt": "原型电路焊接：团队将面包板测试推进为焊接电路，服务于整机集成。",
-            "caption": "团队将面包板测试推进为焊接电路，服务于整机集成。",
+            "alt": "原型电路焊接：团队将面包板测试电路焊接装配，用于整机测试。",
+            "caption": "团队将面包板测试电路焊接装配，用于整机测试。",
             "width": 1720,
             "height": 1390,
             "src": "/assets/process/axis-soldering.webp"
@@ -360,20 +360,20 @@ export const projectProcesses = {
       },
       {
         "id": "assembly",
-        "label": "装配",
-        "title": "明确部件如何配合",
-        "body": "团队在机构开发中同时考虑制造与装配。螺母支架采用标准 M3 紧固件与轴承，梳理为九步装配过程；立柱采用一致截面与内部加强筋，螺栓及摩擦配合则便于拆解维修。这些细节来自 CAD 与原型阶段的生产方案研究。",
+        "label": "装配设计",
+        "title": "细化连接与装配步骤",
+        "body": "团队在 CAD 和原型阶段同步考虑制造、装配与维修。螺母支架使用标准 M3 紧固件和轴承，装配过程分为九步；立柱采用等截面与内部加强筋，并通过螺栓、摩擦配合等方式连接，便于拆解。",
         "images": [
           {
-            "alt": "夹具与螺母支架爆炸图：CAD 图展示夹具、轴承、齿轮及支架的装配关系。",
-            "caption": "CAD 图展示夹具、轴承、齿轮及支架的装配关系。",
+            "alt": "夹具与螺母支架爆炸图：夹具、轴承、齿轮与螺母支架的装配关系。",
+            "caption": "夹具、轴承、齿轮与螺母支架的装配关系。",
             "width": 1620,
             "height": 1446,
             "src": "/assets/process/axis-holder-exploded.webp"
           },
           {
-            "alt": "立柱截面：截面图说明内部加强筋与壁面结构。",
-            "caption": "截面图说明内部加强筋与壁面结构。",
+            "alt": "立柱截面：立柱截面及内部加强筋。",
+            "caption": "立柱截面及内部加强筋。",
             "width": 792,
             "height": 370,
             "src": "/assets/process/axis-tower-section.webp"
@@ -382,20 +382,20 @@ export const projectProcesses = {
       },
       {
         "id": "outcome",
-        "label": "成果",
-        "title": "将工作站带入实际涂装流程",
-        "body": "最终团队原型整合高度调节、俯仰、模型旋转、可靠夹持及颜料盘、画笔收纳。实拍记录其在微缩模型涂装中的使用情况，效果图用于呈现产品形态。我在四人团队中主要负责商业模式、标签、五页用户指南与渲染。后续仍需改进运动部件的线缆管理及旋转限位。",
+        "label": "项目成果",
+        "title": "完成原型与使用说明",
+        "body": "最终原型集成升降、俯仰、模型旋转和夹持功能，并设有颜料盘及画笔收纳空间。团队通过实际涂装记录使用情况。我完成了产品渲染、标签、五页用户指南及商业模式设计。后续改进重点包括运动部件的线缆管理和旋转限位。",
         "images": [
           {
-            "alt": "工作原型的涂装场景：使用者坐在工作台前操作完整 AxisPro 原型。",
-            "caption": "使用者坐在工作台前操作完整 AxisPro 原型。",
+            "alt": "工作原型的涂装场景：使用者操作 AxisPro 原型进行模型涂装。",
+            "caption": "使用者操作 AxisPro 原型进行模型涂装。",
             "width": 1800,
             "height": 1188,
             "src": "/assets/process/axis-use-photograph.webp"
           },
           {
-            "alt": "最终产品效果图：来自原始作品集的 AxisPro 工作站渲染。",
-            "caption": "来自原始作品集的 AxisPro 工作站渲染。",
+            "alt": "最终产品效果图：AxisPro 最终方案渲染图。",
+            "caption": "AxisPro 最终方案渲染图。",
             "width": 1800,
             "height": 1013,
             "src": "/assets/process/axis-final-render.webp"
@@ -405,24 +405,24 @@ export const projectProcesses = {
     ]
   },
   "stream-x": {
-    "intro": "从车身轮廓草图，推进到连续曲面建模与空气动力学分析。",
+    "intro": "独立完成车身草图、曲面建模与 CFD 分析，并根据流场结果提出下一轮修改方向。",
     "stages": [
       {
         "id": "research",
-        "label": "草图",
-        "title": "先建立比例，再展开细节",
-        "body": "项目从跑车形态研究及分流器、尾翼、扩散器等气流控制方式的比较出发。早期草图探索低矮姿态、紧凑座舱与连续车身曲率，第一轮深入方案进一步明确车头、肩线及侧面曲面。",
+        "label": "比例草图",
+        "title": "确定车身比例与轮廓",
+        "body": "从跑车造型和气流控制方式入手，比较分流器、尾翼及扩散器的作用。早期草图围绕低矮车身、紧凑座舱和连续曲线展开，第一轮方案进一步明确车头、肩线与侧面曲面的关系。",
         "images": [
           {
-            "alt": "早期侧面比例草图：由原始作品集中的四组草图整理，比较车身轮廓。",
-            "caption": "由原始作品集中的四组草图整理，比较车身轮廓。",
+            "alt": "早期侧面比例草图：四组侧面草图，比较车身轮廓与比例。",
+            "caption": "四组侧面草图，比较车身轮廓与比例。",
             "width": 1600,
             "height": 720,
             "src": "/assets/process/stream-silhouette-studies.webp"
           },
           {
-            "alt": "STREAM X 第一轮方案：将车身比例转化为较明确的前部与侧面曲面。",
-            "caption": "将车身比例转化为较明确的前部与侧面曲面。",
+            "alt": "STREAM X 第一轮方案：第一轮方案，细化车头与侧面曲面。",
+            "caption": "第一轮方案，细化车头与侧面曲面。",
             "width": 1578,
             "height": 671,
             "src": "/assets/process/stream-first-iteration.webp"
@@ -431,20 +431,20 @@ export const projectProcesses = {
       },
       {
         "id": "iteration",
-        "label": "迭代",
-        "title": "把导流方式融入车身",
-        "body": "第二轮方案通过外置尾翼表达空气动力学意图。反馈促使我重新审视对附加构件的依赖，转向集成于车身的 C 形气流通道。设计重点随之变为：保持车身表面连续，同时为气流建立从车顶向尾部流动的路径。",
+        "label": "方案迭代",
+        "title": "从外置尾翼转向集成导流通道",
+        "body": "第二轮方案采用外置尾翼。根据反馈，我转向与车身融为一体的 C 形导流通道，希望在保持表面连续的同时，引导气流从车顶流向尾部。图中的气流线为设计示意，后续再通过仿真分析。",
         "images": [
           {
-            "alt": "外置尾翼方案：第二轮草图中，外置尾翼是整车造型的一部分。",
-            "caption": "第二轮草图中，外置尾翼是整车造型的一部分。",
+            "alt": "外置尾翼方案：第二轮方案，以外置尾翼组织尾部造型。",
+            "caption": "第二轮方案，以外置尾翼组织尾部造型。",
             "width": 1578,
             "height": 881,
             "src": "/assets/process/stream-wing-iteration.webp"
           },
           {
-            "alt": "集成导流通道草图：原始后侧视图中的橙色线条表示预期气流路径，并非仿真结果。",
-            "caption": "原始后侧视图中的橙色线条表示预期气流路径，并非仿真结果。",
+            "alt": "集成导流通道草图：橙色线条为预期气流路径示意，并非仿真结果。",
+            "caption": "橙色线条为预期气流路径示意，并非仿真结果。",
             "width": 1800,
             "height": 1066,
             "src": "/assets/process/stream-channel-sketch.webp"
@@ -453,20 +453,20 @@ export const projectProcesses = {
       },
       {
         "id": "cad",
-        "label": "CAD",
-        "title": "将草图转化为连续曲面",
-        "body": "简化 CAD 将圆滑前缘、曲面座舱、轮拱与尾部通道组织为一个车身。灰模与线框视图共同呈现曲面几何；在保留主要形态并简化小尺度细节后，该模型成为后续空气动力学研究的基础。",
+        "label": "曲面建模",
+        "title": "将草图细化为车身曲面",
+        "body": "在 CAD 中整合圆滑车头、座舱、轮拱和尾部通道，通过灰模与线框视图检查曲面形态。在保留主要外形的基础上简化局部细节，为后续 CFD 分析准备几何模型。",
         "images": [
           {
-            "alt": "STREAM X 车身灰模：原始 CAD 渲染展示圆滑车头、车顶通道与开放轮拱。",
-            "caption": "原始 CAD 渲染展示圆滑车头、车顶通道与开放轮拱。",
+            "alt": "STREAM X 原始 CAD 灰模：圆滑车头、车顶通道与开放轮拱。",
+            "caption": "原始 CAD 灰模：圆滑车头、车顶通道与开放轮拱。",
             "width": 1800,
             "height": 1013,
             "src": "/assets/process/stream-clay-cad.webp"
           },
           {
-            "alt": "STREAM X 车身线框：同一模型的线框视图展示曲面几何构成。",
-            "caption": "同一模型的线框视图展示曲面几何构成。",
+            "alt": "STREAM X 车身线框：同一车身模型的曲面线框视图。",
+            "caption": "同一车身模型的曲面线框视图。",
             "width": 1800,
             "height": 1013,
             "src": "/assets/process/stream-cad-wireframe.webp"
@@ -476,19 +476,19 @@ export const projectProcesses = {
       {
         "id": "simulation",
         "label": "仿真设置",
-        "title": "建立可分析的 CFD 模型",
-        "body": "通过描绘正面轮廓确定参考面积，并利用半车模型的对称性缩小计算域。在 ANSYS Fluent 中设置约 30.5 m/s 的入口速度与 k–ε 湍流模型。报告采用 458,336 个多面体单元，并在查看流场之前检查表面及体网格质量。该研究使用缩比简化几何。",
+        "title": "建立计算域与网格",
+        "body": "先根据正面轮廓确定参考面积，再采用对称半车模型减少计算量。ANSYS Fluent 中设置约 30.5 m/s 的入口速度和 k–ε 湍流模型，使用 458,336 个多面体单元，并检查表面及体网格质量。本次分析采用缩比简化几何。",
         "images": [
           {
-            "alt": "CFD 计算域：简化半车几何外围的计算域设置。",
-            "caption": "简化半车几何外围的计算域设置。",
+            "alt": "CFD 计算域：简化半车模型及外部计算域。",
+            "caption": "简化半车模型及外部计算域。",
             "width": 697,
             "height": 675,
             "src": "/assets/process/stream-cfd-domain.webp"
           },
           {
-            "alt": "CFD 体网格：用于 Fluent 分析的计算域网格。",
-            "caption": "用于 Fluent 分析的计算域网格。",
+            "alt": "CFD 体网格：用于 Fluent 分析的体网格。",
+            "caption": "用于 Fluent 分析的体网格。",
             "width": 384,
             "height": 236,
             "src": "/assets/process/stream-volume-mesh.webp",
@@ -498,20 +498,20 @@ export const projectProcesses = {
       },
       {
         "id": "analysis",
-        "label": "结果",
-        "title": "从流场中理解形态的影响",
-        "body": "通过压力与速度云图观察前缘、车顶通道及尾流。报告中简化模型的模拟阻力系数为 0.345，与前期几何估算值 0.3025 属于不同阶段的结果。该数值描述本次研究模型，不是经验证的全尺寸车辆性能。",
+        "label": "结果分析",
+        "title": "分析压力分布与尾流",
+        "body": "利用压力、速度云图分析车头、车顶通道和尾流区域。简化模型的模拟阻力系数为 0.345；前期几何估算值为 0.3025，两者来自不同阶段与方法，不能直接作为优化幅度的比较。仿真结果仅适用于本次研究模型。",
         "images": [
           {
-            "alt": "CFD 压力云图：保留报告中的原始图例与数值刻度，观察车身周围压力分布。",
-            "caption": "保留报告中的原始图例与数值刻度，观察车身周围压力分布。",
+            "alt": "CFD 压力云图：压力分布云图，保留原始图例与数值刻度。",
+            "caption": "压力分布云图，保留原始图例与数值刻度。",
             "width": 1243,
             "height": 554,
             "src": "/assets/process/stream-pressure-analysis.webp"
           },
           {
-            "alt": "CFD 速度云图：展示研究几何及其周围计算域中的速度分布。",
-            "caption": "展示研究几何及其周围计算域中的速度分布。",
+            "alt": "CFD 速度云图：车身周围及尾流区域的速度分布。",
+            "caption": "车身周围及尾流区域的速度分布。",
             "width": 977,
             "height": 499,
             "src": "/assets/process/stream-velocity-analysis.webp"
@@ -520,20 +520,20 @@ export const projectProcesses = {
       },
       {
         "id": "reflection",
-        "label": "反思",
-        "title": "用分析结果明确下一轮修改",
-        "body": "分析识别出车身下缘流动分离与车顶后方压力恢复不足。后续方案拟调整通道曲率及出口、改善底部形态，并研究小幅尾缘上翘。同时认识到缩比和简化几何的局限。道路场景效果图仅用于传达设计方向，不作为仿真证据。",
+        "label": "改进方向",
+        "title": "根据流场结果提出修改方案",
+        "body": "分析显示车身下缘存在流动分离，车顶后方的压力恢复也有改进空间。下一轮拟调整通道曲率与出口、细化车底形态，并研究尾缘小幅上翘的效果。道路场景图由 Vizcom AI 辅助生成，用于展示造型，不作为仿真结果。",
         "images": [
           {
-            "alt": "尾流速度细节：通过车后低速区域识别下一轮需要优化的部位。",
-            "caption": "通过车后低速区域识别下一轮需要优化的部位。",
+            "alt": "尾流速度细节：车后低速区域，作为下一轮优化的分析依据。",
+            "caption": "车后低速区域，作为下一轮优化的分析依据。",
             "width": 767,
             "height": 407,
             "src": "/assets/process/stream-rear-wake.webp"
           },
           {
-            "alt": "海岸道路概念效果图：使用 Vizcom AI 辅助呈现银色 STREAM X 的整体造型。",
-            "caption": "使用 Vizcom AI 辅助呈现银色 STREAM X 的整体造型。",
+            "alt": "海岸道路概念效果图：Vizcom AI 辅助概念效果图，展示整体造型。",
+            "caption": "Vizcom AI 辅助概念效果图，展示整体造型。",
             "width": 1448,
             "height": 1086,
             "src": "/assets/process/stream-visualisation.webp"
@@ -544,17 +544,17 @@ export const projectProcesses = {
   },
   "the-path": {
     "title": "Jìng — The Path",
-    "intro": "团队从校园观察出发，通过实体原型与共创活动，发展共享空间提案。",
+    "intro": "团队通过校园观察、用户访谈和实体原型，逐步完善 Queen’s Lawn 公共空间方案。",
     "stages": [
       {
         "id": "research",
-        "label": "调研",
-        "title": "从每天发生的校园生活出发",
-        "body": "Queen’s Lawn 周边的观察与访谈揭示了季节性差异：天气好时草坪使用频繁，冬季则缺少座椅、遮蔽及可用地面。团队据此将任务定义为一处能够支持全年学习、休息与相聚的灵活场所。",
+        "label": "场地调研",
+        "title": "了解草坪在不同季节的使用情况",
+        "body": "团队在 Queen’s Lawn 周边观察并访谈使用者，发现晴天草坪较活跃，而冬季受到座椅不足、缺少遮雨设施及地面潮湿的限制。由此将设计目标确定为：增加全年可用的学习、休息和交流空间。",
         "images": [
           {
-            "alt": "观察与访谈研究板：原始报告将季节性观察、访谈内容与设计洞察联系起来。",
-            "caption": "原始报告将季节性观察、访谈内容与设计洞察联系起来。",
+            "alt": "观察与访谈研究板：将季节性观察、访谈记录整理为设计需求。",
+            "caption": "将季节性观察、访谈记录整理为设计需求。",
             "width": 1032,
             "height": 1228,
             "nativeWidth": 1032,
@@ -565,13 +565,13 @@ export const projectProcesses = {
       },
       {
         "id": "concepts",
-        "label": "概念",
-        "title": "从高位螺旋转向低位路径",
-        "body": "团队比较了 InnoRest、HoloHub 与 The Path 三个方向。结合学生反馈及适应性、容量、多功能性与可行性比较，选择 The Path；随后为改善可达性与实际使用，将较高的螺旋形态降低为流动的路径与环道。",
+        "label": "概念筛选",
+        "title": "降低路径高度，改善空间可达性",
+        "body": "团队比较 InnoRest、HoloHub 和 The Path 三个概念，结合学生反馈，从适应性、容量、功能与可行性等方面评估后选择 The Path。随后将较高的螺旋结构调整为接近地面的步道与环道，以方便通行和日常使用。",
         "images": [
           {
-            "alt": "早期螺旋概念：两层螺旋结构与整合式座椅的初始草图。",
-            "caption": "两层螺旋结构与整合式座椅的初始草图。",
+            "alt": "早期螺旋概念：初始草图：两层螺旋结构与整合式座椅。",
+            "caption": "初始草图：两层螺旋结构与整合式座椅。",
             "width": 448,
             "height": 402,
             "nativeWidth": 448,
@@ -580,8 +580,8 @@ export const projectProcesses = {
             "size": "small"
           },
           {
-            "alt": "低位路径研究：概念筛选后形成的遮蔽、路径与座椅布置草图。",
-            "caption": "概念筛选后形成的遮蔽、路径与座椅布置草图。",
+            "alt": "低位步道研究：降低路径高度后，重新安排遮雨设施、步道与座椅。",
+            "caption": "降低路径高度后，重新安排遮雨设施、步道与座椅。",
             "width": 587,
             "height": 409,
             "nativeWidth": 587,
@@ -593,12 +593,12 @@ export const projectProcesses = {
       {
         "id": "seating",
         "label": "座椅原型",
-        "title": "从手中的模型到可试坐的座椅",
-        "body": "团队通过 3D 打印座椅研究相同模块的不同组合，再制作全尺寸纸板版本，让参与者试坐与后仰。12 人共创活动中，9 人认为固定折叠机构并非必要，因此方案转向使用可拆连接的分离式模块。",
+        "title": "从组合模型到全尺寸试坐",
+        "body": "团队先用 3D 打印模型比较座椅组合，再制作全尺寸纸板椅，邀请参与者试坐、后仰。在 12 人参与的设计活动中，9 人认为固定折叠机构并非必要，方案因此改为使用可拆连接的独立座椅模块。",
         "images": [
           {
-            "alt": "3D 打印座椅体验：参与者手持模型，实际调整模块的组合方式。",
-            "caption": "参与者手持模型，实际调整模块的组合方式。",
+            "alt": "3D 打印座椅体验：参与者用 3D 打印模型尝试不同座椅组合。",
+            "caption": "参与者用 3D 打印模型尝试不同座椅组合。",
             "width": 301,
             "height": 310,
             "nativeWidth": 301,
@@ -607,8 +607,8 @@ export const projectProcesses = {
             "size": "small"
           },
           {
-            "alt": "全尺寸纸板座椅测试：通过参与者试坐及后仰，收集初步舒适性反馈。",
-            "caption": "通过参与者试坐及后仰，收集初步舒适性反馈。",
+            "alt": "全尺寸纸板座椅测试：通过全尺寸纸板椅试坐，收集初步舒适性反馈。",
+            "caption": "通过全尺寸纸板椅试坐，收集初步舒适性反馈。",
             "width": 212,
             "height": 218,
             "nativeWidth": 212,
@@ -620,13 +620,13 @@ export const projectProcesses = {
       },
       {
         "id": "layout",
-        "label": "共创",
-        "title": "用实体模型比较空间布局",
-        "body": "团队以泡沫与纸板模型比较抬高环道和低位路径。12 名参与者（11 名学生、1 名教授）在 Queen’s Lawn 比例模型上放置座椅及人物，其中 8 人偏好路径方案，认为其更好地兼顾私密停留与社交联系。",
+        "label": "布局测试",
+        "title": "邀请使用者比较两种空间布局",
+        "body": "使用泡沫和纸板制作高架环道、低位步道两种模型。11 名学生与 1 名教授在 Queen’s Lawn 比例模型上摆放座椅和人物，讨论使用方式。其中 8 人更偏好低位步道，认为它能够同时提供相对安静的区域和交流空间。",
         "images": [
           {
-            "alt": "抬高环道原型：用于比较空间布局的泡沫、纸板比例模型。",
-            "caption": "用于比较空间布局的泡沫、纸板比例模型。",
+            "alt": "高架环道原型：高架环道的泡沫与纸板比例模型。",
+            "caption": "高架环道的泡沫与纸板比例模型。",
             "width": 338,
             "height": 289,
             "nativeWidth": 338,
@@ -635,8 +635,8 @@ export const projectProcesses = {
             "size": "small"
           },
           {
-            "alt": "低位路径原型：与环道方案并置，帮助参与者表达空间使用偏好。",
-            "caption": "与环道方案并置，帮助参与者表达空间使用偏好。",
+            "alt": "低位步道原型：低位步道模型，用于与高架环道方案对照。",
+            "caption": "低位步道模型，用于与高架环道方案对照。",
             "width": 344,
             "height": 304,
             "nativeWidth": 344,
@@ -648,13 +648,13 @@ export const projectProcesses = {
       },
       {
         "id": "refine",
-        "label": "细化",
-        "title": "将反馈转化为设计决策",
-        "body": "团队根据反馈提出适应潮湿条件的铺装与排水方案，并在安静区和共享区周边分别安排座椅。滑梯与攀爬墙为结构增加可互动的路径，最终在整体 CAD 中整合这些设计决定。",
+        "label": "方案细化",
+        "title": "落实铺装、排水与活动设施",
+        "body": "根据反馈，团队补充了适应潮湿环境的铺装和排水设计，并在安静区与共享区分别安排座椅。滑梯和攀爬墙增加活动功能，最终与曲面遮雨结构一起整合到 CAD 方案中。",
         "images": [
           {
-            "alt": "整合后的 CAD 提案：曲面肋片遮蔽、路径、滑梯与攀爬墙共同形成空间方案。",
-            "caption": "曲面肋片遮蔽、路径、滑梯与攀爬墙共同形成空间方案。",
+            "alt": "整合后的 CAD 提案：整合遮雨结构、步道、滑梯和攀爬墙的 CAD 方案。",
+            "caption": "整合遮雨结构、步道、滑梯和攀爬墙的 CAD 方案。",
             "width": 730,
             "height": 461,
             "nativeWidth": 730,
@@ -665,13 +665,13 @@ export const projectProcesses = {
       },
       {
         "id": "proposal",
-        "label": "提案",
-        "title": "回到真实的校园情境中",
-        "body": "最终 CAD 效果图将方案放回 Queen’s Lawn，表达曲面遮蔽、模块座椅与开放通行如何支持校园生活。日景与夜景用于呈现空间氛围及场地关系；完整结构仍为概念提案，并未建成。",
+        "label": "最终方案",
+        "title": "展示方案与校园场地的关系",
+        "body": "最终效果图将曲面遮雨结构、模块化座椅和步道放入 Queen’s Lawn 场景，展示空间布局及使用方式。日景与夜景分别呈现场地关系和照明设想；该方案仍处于概念设计阶段。",
         "images": [
           {
-            "alt": "校园场景中的俯视效果图：最终 CAD 方案与 Queen’s Lawn 场地的关系。",
-            "caption": "最终 CAD 方案与 Queen’s Lawn 场地的关系。",
+            "alt": "校园场景中的俯视效果图：最终方案与 Queen’s Lawn 的场地关系。",
+            "caption": "最终方案与 Queen’s Lawn 的场地关系。",
             "width": 796,
             "height": 563,
             "nativeWidth": 796,
@@ -679,8 +679,8 @@ export const projectProcesses = {
             "src": "/assets/process/path-final-aerial.webp"
           },
           {
-            "alt": "共享空间夜景：夜间效果图表达遮蔽结构与路径照明的预期氛围。",
-            "caption": "夜间效果图表达遮蔽结构与路径照明的预期氛围。",
+            "alt": "共享空间夜景：夜景效果图，展示路径照明与空间氛围。",
+            "caption": "夜景效果图，展示路径照明与空间氛围。",
             "width": 1039,
             "height": 585,
             "nativeWidth": 1039,
@@ -693,17 +693,17 @@ export const projectProcesses = {
   },
   "simrest": {
     "title": "SIMREST Q2",
-    "intro": "麒盛科技研发部实习中的 CAD 与外观建模参与：比较产品形态、实体控制及构件安排。",
+    "intro": "记录在麒盛科技研发部参与的 CAD 与外观建模工作：从形态比较、操作布局到装配和尺寸细化。",
     "stages": [
       {
         "id": "form",
-        "label": "外观概念",
-        "title": "让产品安静融入床头",
-        "body": "方案以圆柱形外壳结合织物质感顶面、环形灯光及无线充电区域，在紧凑形态中布置后部 USB-C 接口、前部麦克风与下壳通风区域。我在研发实习中参与其 CAD 设计与外观建模，以下图片展示方案研究过程。",
+        "label": "外观设计",
+        "title": "确定外壳形态与功能位置",
+        "body": "方案采用圆柱形外壳、织物质感顶面和环形灯光，在顶部布置无线充电区域，后部设置 USB-C 接口，前部及底部安排麦克风和通风孔。我在实习期间参与了 CAD 设计与外观建模，以下图片记录方案的比较与细化。",
         "images": [
           {
-            "alt": "SIMREST Q2 顶部视图：通过效果图研究顶面与拟采用的无线充电区域。",
-            "caption": "通过效果图研究顶面与拟采用的无线充电区域。",
+            "alt": "SIMREST Q2 顶部视图：顶面造型与无线充电区域的布局。",
+            "caption": "顶面造型与无线充电区域的布局。",
             "width": 1448,
             "height": 1086,
             "nativeWidth": 1448,
@@ -711,8 +711,8 @@ export const projectProcesses = {
             "src": "/assets/process/simrest-top-interface.webp"
           },
           {
-            "alt": "SIMREST Q2 后部视图：研究 USB-C 接口与下壳通风区域的布置。",
-            "caption": "研究 USB-C 接口与下壳通风区域的布置。",
+            "alt": "SIMREST Q2 后部视图：USB-C 接口与底部通风孔的位置。",
+            "caption": "USB-C 接口与底部通风孔的位置。",
             "width": 1448,
             "height": 1086,
             "nativeWidth": 1448,
@@ -723,13 +723,13 @@ export const projectProcesses = {
       },
       {
         "id": "sliders",
-        "label": "实体控制",
-        "title": "有序安排底部设置",
-        "body": "初始界面方案将问候、音量、鼾声干预灵敏度及角度设置集中到底面。滑块以可见位置表达当前设置，扬声器与支脚则围绕控制区域布置。这些图用于研究界面布局，不代表相关功能已完成验证。",
+        "label": "滑块方案",
+        "title": "将常用设置集中到底部",
+        "body": "初始方案将问候、音量、鼾声干预灵敏度和角度设置集中在底面。滑块的位置用于显示当前档位，扬声器与支脚围绕控制区布置。本阶段主要比较外观与操作布局。",
         "images": [
           {
-            "alt": "滑块式底部布局：四组设置滑块、扬声器孔及支脚之间的安排。",
-            "caption": "四组设置滑块、扬声器孔及支脚之间的安排。",
+            "alt": "滑块式底部布局：底部四组滑块、扬声器孔和支脚的布局。",
+            "caption": "底部四组滑块、扬声器孔和支脚的布局。",
             "width": 1254,
             "height": 1254,
             "nativeWidth": 1254,
@@ -737,8 +737,8 @@ export const projectProcesses = {
             "src": "/assets/process/simrest-slider-base.webp"
           },
           {
-            "alt": "音量滑块细节：拟议滑块通过高、中、低、关闭四档表达音量设置。",
-            "caption": "拟议滑块通过高、中、低、关闭四档表达音量设置。",
+            "alt": "音量滑块细节：音量滑块设有高、中、低、关闭四档。",
+            "caption": "音量滑块设有高、中、低、关闭四档。",
             "width": 1080,
             "height": 772,
             "nativeWidth": 1080,
@@ -749,13 +749,13 @@ export const projectProcesses = {
       },
       {
         "id": "buttons",
-        "label": "方案比较",
-        "title": "探索按键式控制",
-        "body": "另一方案以独立模式按键与发光状态标签替代滑块。两组效果图在保留整体底部布局的前提下，比较设置选择方式与状态传达形式，为外观及交互方案评审提供依据。",
+        "label": "按键方案",
+        "title": "比较按键与滑块的操作方式",
+        "body": "另一方案用独立模式按键和发光状态标签替代滑块。在保留整体底部布局的基础上，比较两种设置方式及状态指示，为方案评审提供参考。",
         "images": [
           {
-            "alt": "按键式底部方案：用模式按键及发光标签替代滑块。",
-            "caption": "用模式按键及发光标签替代滑块。",
+            "alt": "按键式底部方案：以模式按键和发光标签替代滑块的方案。",
+            "caption": "以模式按键和发光标签替代滑块的方案。",
             "width": 1254,
             "height": 1254,
             "nativeWidth": 1254,
@@ -763,8 +763,8 @@ export const projectProcesses = {
             "src": "/assets/process/simrest-button-base.webp"
           },
           {
-            "alt": "按键与状态指示：音量按键的中档标签亮起，用于表达拟议状态反馈。",
-            "caption": "音量按键的中档标签亮起，用于表达拟议状态反馈。",
+            "alt": "按键与状态指示：通过亮起的标签指示当前音量档位。",
+            "caption": "通过亮起的标签指示当前音量档位。",
             "width": 1396,
             "height": 997,
             "nativeWidth": 1396,
@@ -775,13 +775,13 @@ export const projectProcesses = {
       },
       {
         "id": "assembly",
-        "label": "构件布局",
-        "title": "把分层关系表达清楚",
-        "body": "爆炸视图分开呈现顶部圆盘、环形件、织物表层、外壳、通风底座及下方面板，用于说明构件安排，以及紧凑外观如何拆分成多个零件。该图为概念装配表达，不代表已完成生产或整机验证。",
+        "label": "装配关系",
+        "title": "拆分外壳，明确部件位置",
+        "body": "爆炸图分开展示顶部圆盘、环形件、织物表层、外壳、通风底座及底部面板，用于检查各层构件的位置和装配关系。本阶段为概念装配设计，尚非量产结构验证。",
         "images": [
           {
-            "alt": "SIMREST Q2 分层构件图：概念爆炸视图展示外壳与上下层构件的关系。",
-            "caption": "概念爆炸视图展示外壳与上下层构件的关系。",
+            "alt": "SIMREST Q2 分层构件图：概念爆炸图，展示外壳与各层构件的装配关系。",
+            "caption": "概念爆炸图，展示外壳与各层构件的装配关系。",
             "width": 1800,
             "height": 1350,
             "nativeWidth": 3840,
@@ -792,13 +792,13 @@ export const projectProcesses = {
       },
       {
         "id": "profile",
-        "label": "形态比较",
-        "title": "比较两种顶部轮廓",
-        "body": "通过顶面平齐与中央圆盘抬升两种方案，比较外形轮廓及环形灯光的表现。相同床头情境下的并列效果图，让细微形态差异更容易被识别。",
+        "label": "顶部比较",
+        "title": "比较平齐与抬升两种顶面",
+        "body": "通过顶部平齐和中央圆盘抬升两种方案，比较外形轮廓与环形灯光的效果。使用相同床头场景进行对照，便于观察形态差异。",
         "images": [
           {
-            "alt": "平齐式顶部：中央圆盘与顶面保持平齐的床头场景效果图。",
-            "caption": "中央圆盘与顶面保持平齐的床头场景效果图。",
+            "alt": "平齐式顶部：中央圆盘与顶面平齐的方案。",
+            "caption": "中央圆盘与顶面平齐的方案。",
             "width": 1672,
             "height": 941,
             "nativeWidth": 1672,
@@ -806,8 +806,8 @@ export const projectProcesses = {
             "src": "/assets/process/simrest-flush-top.webp"
           },
           {
-            "alt": "抬升式顶部：中央圆盘高于顶面的床头场景效果图。",
-            "caption": "中央圆盘高于顶面的床头场景效果图。",
+            "alt": "抬升式顶部：中央圆盘高于顶面的方案。",
+            "caption": "中央圆盘高于顶面的方案。",
             "width": 1448,
             "height": 1086,
             "nativeWidth": 1448,
@@ -819,12 +819,12 @@ export const projectProcesses = {
       {
         "id": "scale",
         "label": "尺寸细化",
-        "title": "明确尺度与展示方式",
-        "body": "原始尺寸研究标注外径 120 mm、主体高度 45.7 mm、中央圆盘直径 54 mm，以及抬升方案的 6 mm 高差。最终床头效果图将紧凑形态放回使用场景，帮助传达外观比例与设计意图。",
+        "title": "细化外形尺寸与比例",
+        "body": "原始尺寸图标注外径 120 mm、主体高度 45.7 mm、中央圆盘直径 54 mm，以及抬升方案的 6 mm 高差。最终效果图将产品放回床头场景，展示外观比例。",
         "images": [
           {
-            "alt": "SIMREST Q2 原始尺寸图：侧视与俯视尺寸说明概念方案的外形尺度。",
-            "caption": "侧视与俯视尺寸说明概念方案的外形尺度。",
+            "alt": "SIMREST Q2 原始尺寸图：侧视及俯视尺寸图，说明产品外形尺度。",
+            "caption": "侧视及俯视尺寸图，说明产品外形尺度。",
             "width": 1800,
             "height": 906,
             "nativeWidth": 1800,
@@ -832,8 +832,8 @@ export const projectProcesses = {
             "src": "/assets/process/simrest-dimensions.webp"
           },
           {
-            "alt": "最终床头场景效果图：在木质床头柜上展示产品的概念形态与使用情境。",
-            "caption": "在木质床头柜上展示产品的概念形态与使用情境。",
+            "alt": "最终床头场景效果图：床头使用场景中的最终概念效果图。",
+            "caption": "床头使用场景中的最终概念效果图。",
             "width": 1491,
             "height": 1055,
             "nativeWidth": 1491,

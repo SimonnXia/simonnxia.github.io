@@ -12,7 +12,7 @@ function showImage(index) {
   const item = imageItems[imageIndex];
   viewerImage.src = item.src;
   viewerImage.alt = item.alt;
-  document.querySelector('#image-viewer-caption').textContent = item.caption + (item.kind === 'render' ? ' AI 辅助概念可视化。' : '');
+  document.querySelector('#image-viewer-caption').textContent = item.caption + (item.kind === 'render' ? ' AI 辅助概念效果图。' : '');
   document.querySelector('#image-viewer-position').textContent = `${imageIndex + 1} / ${imageItems.length}`;
   previous.disabled = imageIndex === 0;
   next.disabled = imageIndex === imageItems.length - 1;
@@ -86,7 +86,7 @@ export function renderProjectProcess(key, scroller) {
       const caption = element('figcaption');
       if (item.title) caption.append(element('strong', 'process-image-title', item.title));
       caption.append(element('span', '', item.caption));
-      if (item.kind === 'drawing' && item.group) caption.append(element('small', 'process-image-kind', '原始细节图纸'));
+      if (item.kind === 'drawing' && item.group) caption.append(element('small', 'process-image-kind', '原始结构图'));
       figure.append(button, caption);
       groupImages.append(figure);
     });

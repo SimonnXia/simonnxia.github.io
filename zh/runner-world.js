@@ -48,8 +48,8 @@ export async function initRunnerWorld() {
   const images = [
     ['01','AXISPRO','产品工程','/assets/projects/axispro-exploded.webp',-3.6,2.6,-4,.28],
     ['02','THE PATH','空间设计','/assets/projects/path-reference.png',6,2.5,-11,-.4],
-    ['03','STREAM X','车辆设计','/assets/projects/stream-x-road-front.webp',-4.2,2.7,-19,.25],
-    ['04','SIMREST Q2','工业设计','/assets/projects/simrest-bedside.jpg',5.8,2.6,-27,-.3],
+    ['03','STREAM X','汽车造型','/assets/projects/stream-x-road-front.webp',-4.2,2.7,-19,.25],
+    ['04','SIMREST Q2','产品外观','/assets/projects/simrest-bedside.jpg',5.8,2.6,-27,-.3],
     ['05','MODUFRAME','可持续设计','/assets/moduframe-renders/moduframe-front-render.webp',-4.1,2.65,-27.5,.22,'contain'],
   ];
   const panels = images.map(([number,title,category,url,x,y,z,angle,fit])=>{
@@ -77,7 +77,7 @@ export async function initRunnerWorld() {
   const boardCtx=boardCanvas.getContext('2d');boardCtx.fillStyle='#eeeae1';boardCtx.fillRect(0,0,1600,900);
   boardCtx.fillStyle='#193b3a';boardCtx.textAlign='center';boardCtx.font='38px "Noto Sans SC", "PingFang SC", sans-serif';boardCtx.fillText('夏琛沣 / 设计工程',800,205);
   boardCtx.font='500 145px "Noto Sans SC", "PingFang SC", sans-serif';boardCtx.fillText('设计项目',800,452);
-  boardCtx.font='34px "Noto Sans SC", "PingFang SC", sans-serif';boardCtx.fillText('五个项目，从想法走向实践。',800,550);
+  boardCtx.font='34px "Noto Sans SC", "PingFang SC", sans-serif';boardCtx.fillText('从设计构思，到建模与分析。',800,550);
   boardCtx.strokeStyle='#193b3a55';boardCtx.beginPath();boardCtx.moveTo(120,710);boardCtx.lineTo(1480,710);boardCtx.stroke();
   const boardTexture=new THREE.CanvasTexture(boardCanvas);boardTexture.colorSpace=THREE.SRGBColorSpace;
   const billboard=new THREE.Group();billboard.position.set(0,3.7,billboardZ);scene.add(billboard);
