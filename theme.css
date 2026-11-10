@@ -47,6 +47,14 @@
   .about { background:#e2e7de; }
   .portrait-block { background:var(--surface); color:var(--ink); }
   .english-statement, .about-description { color:var(--muted); }
+  .internship-experience .education-row + .education-row { margin-top:28px; padding-top:26px; border-top:1px solid var(--line); }
+  .internship-experience .timeline-label { line-height:1.65; font-variant-numeric:tabular-nums; }
+  .internship-year { display:block; }
+  .internship-experience .internship-role { color:var(--ink); font-weight:500; line-height:1.65; }
+  .internship-role span { display:block; color:var(--muted); font-weight:400; margin-top:3px; }
+  .internship-details { margin:12px 0 0; padding-left:1.1em; color:var(--muted); font-size:14px; line-height:1.8; }
+  .internship-details li + li { margin-top:7px; }
+  .internship-experience .internship-summary { margin-top:12px; font-size:14px; line-height:1.8; }
   .project-track { scrollbar-color:#748e81 #193b3a14; }
   .project-card { background:var(--surface); color:var(--ink); }
   .project-meta p, .project-category, .project-format { color:var(--muted); }
@@ -86,6 +94,10 @@
   .case-gallery .technical-detail img { background:#c9d5cc; }
 }
 @layer responsive {
+  @media(max-width:900px) {
+    .internship-experience .education-row { grid-template-columns:1fr; gap:9px; }
+    .internship-year { display:inline; }
+  }
   @media(max-width:760px) {
     .world-pin::after { background:linear-gradient(0deg,#204743 0%,#204743ed 25%,transparent 64%); }
     .project-dialog[data-theme="stream"] .project-story-pin::after { background:linear-gradient(0deg,#c9d5cc 0%,#c9d5ccf5 32%,transparent 66%); }
